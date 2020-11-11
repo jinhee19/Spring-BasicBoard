@@ -1,0 +1,32 @@
+package com.board.service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.board.domain.PlaceVO;
+import com.board.mapper.PlaceMapper;
+
+import lombok.AllArgsConstructor;
+
+@Service
+@AllArgsConstructor
+public class PlaceServiceImpl implements PlaceService{
+	
+	private PlaceMapper mapper;
+	
+	@Override
+	public PlaceVO get(Long bno) {
+		return mapper.read(bno);		
+	}
+
+	@Override
+	public List<PlaceVO> getDetail() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+	
+
+}

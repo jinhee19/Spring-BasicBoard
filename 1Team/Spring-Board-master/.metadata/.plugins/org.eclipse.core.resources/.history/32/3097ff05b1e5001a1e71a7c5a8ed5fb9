@@ -1,0 +1,10 @@
+package kr.co.mapper;
+
+import java.util.List;
+
+import kr.co.spring.myboard.domain.BoardVO;
+import kr.co.spring.myboard.domain.Criteria;
+
+public class BoardMapper {
+
+}
